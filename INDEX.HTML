@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Verification & Training Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                    <path d="M12 6v6l4 2"/>
+                </svg>
+                Student Data Verification & Training Portal
+            </div>
+            <p class="subtitle"></p>
+        </div>
+
+        <form id="dataForm">
+            <div class="row">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="e.g. John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" name="studentId" required placeholder="e.g. STU-2024-001">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="e.g. +1 234 567 8900">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="email">Student Email</label>
+                    <input type="email" id="email" name="email" required placeholder="student@university.edu">
+                </div>
+                <div class="form-group">
+                    <label for="altEmail">Alternative Email</label>
+                    <input type="email" id="altEmail" name="altEmail" placeholder="personal@gmail.com">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="formerSchool">Former School Email</label>
+                <input type="email" id="formerSchool" name="formerSchool" placeholder="former@school.edu">
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Data</button>
+        </form>
+
+        <div id="successMsg" class="success-message">
+            Student verification on process!  wait for the confirmation message on your email in 24 hours.
+        </div>
+
+        <div class="footer">
+            &copy; 2026 . All rights reserved.<br>
+            Secure Data Collection Portal v1.0
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
